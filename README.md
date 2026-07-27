@@ -2,6 +2,9 @@
 
 **An Agentic AI system that predicts Antimicrobial Resistance (AMR) from combined genomic and clinical patient data — built as a 4-agent pipeline with a hybrid ML model and an LLM-powered clinical interpretation layer.**
 
+🔗 **[Live Demo](https://amr-prediction-system.vercel.app)** — try it yourself (no signup required)
+> Note: the backend runs on a free-tier server that sleeps after inactivity. The first prediction after a period of no traffic may take 30–50 seconds to respond while it wakes up — subsequent requests are fast (typically well under 1 second).
+
 > Antimicrobial Resistance is one of the World Health Organization's top global health threats — bacteria evolving to resist the drugs used to treat them. This project automates the classification of a bacterial isolate as **Resistant**, **Intermediate**, or **Susceptible**, by combining genomic markers with patient clinical history — something most existing ML approaches don't do — and explains *why* in plain clinical language instead of returning an unexplained label.
 
 ---
@@ -102,6 +105,7 @@ This project is a full-stack implementation inspired by the architecture propose
 | **Charts** | Recharts | Accuracy comparison chart, confusion matrix visualization |
 | **Data handling** | pandas, NumPy | Dataset generation, feature engineering |
 | **Serialization** | joblib | Persisting trained model + preprocessing artifacts |
+| **Deployment** | Render (backend) + Vercel (frontend) | Live hosting — see [Live Demo](#live-demo--screenshots) above |
 
 ---
 
