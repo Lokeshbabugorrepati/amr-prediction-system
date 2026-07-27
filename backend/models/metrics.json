@@ -1,0 +1,61 @@
+{
+  "table": {
+    "XGBoost": {
+      "accuracy": 89.7,
+      "precision": 0.89,
+      "recall": 0.89,
+      "f1_score": 0.89,
+      "auc": 0.97
+    },
+    "LightGBM": {
+      "accuracy": 90.2,
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1_score": 0.9,
+      "auc": 0.97
+    },
+    "CatBoost": {
+      "accuracy": 89.9,
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1_score": 0.9,
+      "auc": 0.97
+    },
+    "Deep Neural Network": {
+      "accuracy": 86.7,
+      "precision": 0.87,
+      "recall": 0.87,
+      "f1_score": 0.87,
+      "auc": 0.97
+    },
+    "Proposed Hybrid (DNN + Ensemble)": {
+      "accuracy": 91.3,
+      "precision": 0.91,
+      "recall": 0.91,
+      "f1_score": 0.91,
+      "auc": 0.98
+    }
+  },
+  "confusion_matrix": [
+    [
+      107,
+      11,
+      4
+    ],
+    [
+      11,
+      176,
+      0
+    ],
+    [
+      6,
+      0,
+      53
+    ]
+  ],
+  "classes": [
+    "Intermediate",
+    "Resistant",
+    "Susceptible"
+  ]
+}
